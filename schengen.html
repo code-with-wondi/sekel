@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="single.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<title>Line Addis</title>
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="head-wrapper">
+        <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
+        <img src="logo.png" alt="logo" class="logo">
+    </div>
+
+
+    <div class="drawer" id="myDrawer">
+      
+        <ul class="menu">
+            <li onclick="toggleDropdown(1)">Tourist Visas
+                <ul class="dropdown-list" id="dropdown1">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit Austraila</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit UAE</li>
+                    <li>Visit Bali</li>
+                    <li>Visit Russia</li>
+                    <li>Visit Turkey</li>
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(2)">Study Visas
+                <ul class="dropdown-list" id="dropdown2">
+                    <li>study in Austria</li>
+                    <li>study in Italy</li>
+                    <li>study in Australia</li>
+                    <li>study in China</li>
+                    <li>study in India</li>
+                    <li>study in USA</li>
+                    <li>study in Poland</li>
+                    <li>study in Canada</li>
+                    <li>study in UK</li>
+                    <li>study in Russia</li>
+                    <li>study in Turkey</li>
+                    <li>study in South Korea</li>
+
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(3)">Business visas
+                <ul class="dropdown-list" id="dropdown3">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit Turkey</li>
+               
+                </ul>
+            </li>
+            <li>FAQs</li>
+        </ul>
+    </div>
+    <div class="detail-main">
+        <img src="banner.png" alt="">
+        <h3>Visit Schengen States ( europe)         </h3>
+        <p>Here at our agency Line Addis, we provide comprehensive support in obtaining both tourist and business visas to Schengen States. with our team of highly experienced Travel consultants, you can leave all the details in our capable hands.</p>
+        </div>
+    </div>
+    <ul class="drop">
+        <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Our services </li>
+        <div class="details" id="details1">
+            issuing invitation letters, 
+managing the visa process, 
+arranging accommodations, 
+arranging ground transportation, 
+planning tour itineraries, 
+providing knowledgeable tour guides, 
+providing attentive customer support throughout your stay. 
+
+        </div>
+        <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>How to apply </i></li>
+        <div class="details" id="details2">
+            To apply for a Tourist or business visas, all you need to do is bring your passport and the required supporting documents that demonstrate your socioeconomic ties in Ethiopia. These documents may include bank statements, property ownership certificates, marriage certificates, business ownership or employment certificates, and more. We only require scanned copies or copies of your documents for the application.
+ <br>
+            Once our consultants have reviewed your documents and confirmed your eligibility for a visa application, we will take care of the remaining paperwork, plan your tour itinerary, and issue an invitation letter from a welcoming company. We will also schedule your visa application date to ensure a smooth process.
+                    </div>
+        <li onclick="showDetails(3)"> <i class="fa fa-caret-down"></i>Cost</i></li>
+        <div class="details" id="details3">
+            Our typical service charges are inclusive of VAT and cover the costs of the visa process, travel insurance, a 6-day stay at a 4-star hotel with complementary breakfast, tour guide arrangement, and ground transportation services. The total cost is 253,000 ETB, with a prepayment of 23,000 ETB payable upon registration.
+
+        </div>
+        <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>Process Duration</i></li>
+        <div class="details" id="details4">
+            Please note that the visa processing time can vary depending on the destination you wish to travel, usually it takes 2 weeks to get visa results once visa application is submitted to the embassy. Once your visa is granted, you can start planning your trip and explore all the wonders that await you.
+ <br>
+            So what are you waiting for? Contact us today and let us take care of all the details so you can fulfill your dream of visiting the Schengen States. We look forward to providing you with an unforgettable travel experience.
+            
+            
+        </div>
+
+      </ul>
+      
+    <script>
+        function showDetails(id) {
+  var details = document.getElementById('details' + id);
+  if (details.style.display === "none") {
+    details.style.display = "block";
+  } else {
+    details.style.display = "none";
+  }
+}
+        function toggleDrawer() {
+            var drawer = document.getElementById("myDrawer");
+            drawer.classList.toggle("open");
+            
+        }
+
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById("dropdown" + id);
+            dropdown.classList.toggle("active");
+        }
+    </script>
+<style>
+    
+</style>
+</body>
+
+</html>

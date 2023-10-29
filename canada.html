@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="single.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<title>Line Addis</title>
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="head-wrapper">
+        <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
+        <img src="logo.png" alt="logo" class="logo">
+    </div>
+
+
+    <div class="drawer" id="myDrawer">
+      
+        <ul class="menu">
+            <li onclick="toggleDropdown(1)">Tourist Visas
+                <ul class="dropdown-list" id="dropdown1">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit Austraila</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit UAE</li>
+                    <li>Visit Bali</li>
+                    <li>Visit Russia</li>
+                    <li>Visit Turkey</li>
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(2)">Study Visas
+                <ul class="dropdown-list" id="dropdown2">
+                    <li>study in Austria</li>
+                    <li>study in Italy</li>
+                    <li>study in Australia</li>
+                    <li>study in China</li>
+                    <li>study in India</li>
+                    <li>study in USA</li>
+                    <li>study in Poland</li>
+                    <li>study in Canada</li>
+                    <li>study in UK</li>
+                    <li>study in Russia</li>
+                    <li>study in Turkey</li>
+                    <li>study in South Korea</li>
+
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(3)">Business visas
+                <ul class="dropdown-list" id="dropdown3">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit Turkey</li>
+               
+                </ul>
+            </li>
+            <li>FAQs</li>
+        </ul>
+    </div>
+    <div class="detail-main">
+        <img src="banner.png" alt="">
+        <h3>VISIT Canada
+        </h3>
+        <p>Here at our agency Line Addis, we provide comprehensive support in obtaining both tourist and business visas to Schengen States. with our team of highly experienced Travel consultants, you can leave all the details in our capable hands.</p>
+        </div>
+    </div>
+    <ul class="drop">
+        <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>About the program</li>
+        <div class="details" id="details1">
+            The expanse of Canada's natural beauty, from mountains and glaciers to secluded lakes and forests, is almost unparalleled worldwide. But Canada's allure is not just the great outdoors. Canada has cosmopolitan cities that are clean, safe, friendly, and multicultural. In fact, Canada repeatedly is lauded as one of the world's most livable countries. Whether your interests are river rafting or live theater, Canada won’t disappoint.
+
+        </div>
+        <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>   Application documents and requirements</i></li>
+        <div class="details" id="details2">
+            <ul>
+                <li>Have a valid travel document, like a passport</li>
+                <li>Be in good health</li>
+                <li>Have no criminal or immigration-related convictions</li>
+                <li>Convince an immigration officer that you have ties—such as a job, home, financial assets or family—that will take you back to your home country</li>
+                <li>Convince an immigration officer that you will leave canada at the end of your visit</li>
+                <li>Have enough money for your stay</li>
+                </ul> 
+        </div>
+        <li onclick="showDetails(3)"> <i class="fa fa-caret-down"></i>Service payments</i></li>
+        <div class="details" id="details3">
+            290,000 birr
+        </div>
+        <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>Process Duration</i></li>
+        <div class="details" id="details4">
+            1 - 2 months
+            
+        </div>
+        <li onclick="showDetails(5)"> <i class="fa fa-caret-down"></i> Application steps</i></li>
+        <div class="details" id="details5">
+            <ul>
+                <li>Complete paperwork provided by Line Addis</li>
+                <li>Provide Passport and other relevant documents</li>
+                <li>Complete payment and receive visa</li>
+                </ul>
+            
+        </div>
+        <li onclick="showDetails(6)"> <i class="fa fa-caret-down"></i>  Our services list</i></li>
+        <div class="details" id="details6">
+            <ul>
+                <li>Complete paperwork provided by Line Addis</li>
+                <li>Provide Passport and other relevant documents</li>
+                <li>Complete payment and receive visa</li>
+                </ul>
+        </div>
+
+      </ul>
+      
+    <script>
+        function showDetails(id) {
+  var details = document.getElementById('details' + id);
+  if (details.style.display === "none") {
+    details.style.display = "block";
+  } else {
+    details.style.display = "none";
+  }
+}
+        function toggleDrawer() {
+            var drawer = document.getElementById("myDrawer");
+            drawer.classList.toggle("open");
+            
+        }
+
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById("dropdown" + id);
+            dropdown.classList.toggle("active");
+        }
+    </script>
+<style>
+    
+</style>
+</body>
+
+</html>

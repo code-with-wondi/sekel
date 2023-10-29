@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="single.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<title>Line Addis</title>
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="head-wrapper">
+        <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
+        <img src="logo.png" alt="logo" class="logo">
+    </div>
+
+
+    <div class="drawer" id="myDrawer">
+      
+        <ul class="menu">
+            <li onclick="toggleDropdown(1)">Tourist Visas
+                <ul class="dropdown-list" id="dropdown1">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit Austraila</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit UAE</li>
+                    <li>Visit Bali</li>
+                    <li>Visit Russia</li>
+                    <li>Visit Turkey</li>
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(2)">Study Visas
+                <ul class="dropdown-list" id="dropdown2">
+                    <li>study in Austria</li>
+                    <li>study in Italy</li>
+                    <li>study in Australia</li>
+                    <li>study in China</li>
+                    <li>study in India</li>
+                    <li>study in USA</li>
+                    <li>study in Poland</li>
+                    <li>study in Canada</li>
+                    <li>study in UK</li>
+                    <li>study in Russia</li>
+                    <li>study in Turkey</li>
+                    <li>study in South Korea</li>
+
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(3)">Business visas
+                <ul class="dropdown-list" id="dropdown3">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit Turkey</li>
+               
+                </ul>
+            </li>
+            <li>FAQs</li>
+        </ul>
+    </div>
+    <div class="detail-main">
+        <img src="banner.png" alt="">
+        <h3>Study in Italy
+        </h3>
+        <p>Here at our agency Line Addis, we provide comprehensive support in obtaining both tourist and business visas to Schengen States. with our team of highly experienced Travel consultants, you can leave all the details in our capable hands.</p>
+        </div>
+    </div>
+    <ul class="drop">
+        <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Our range of services include:
+        </li>
+        <div class="details" id="details1">
+            <ul>
+                <li>Consultation with experts</li>
+                <li>Fast-track admission to universities</li>
+                <li>Assistance with scholarship applications</li>
+                <li>Preparation, booking, and payment for English proficiency exams</li>
+                <li>Help with embassy visits, appointment bookings, and visa document preparation</li>
+                <li>Efficient training for visa interviews, motivation letter, and essay preparation</li>
+                <li>Support for appealing Negative visa decisions</li>
+                <li>Assistance with booking accommodations</li>
+                <li>Pre- departure training</li>
+                </ul>
+                </div>
+        <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>   Application documents</i></li>
+        <div class="details" id="details2">
+            For undergraduate applications, the required documents are:
+            <ul>
+                <li>Valid passport</li>
+                <li>High school transcript for grades 9-12</li>
+                <li>Grade 10 and 12 national exam results</li>
+                <li>Recommendation letter</li>
+                <li>Results from English language proficiency exams</li>
+                </ul>
+                For masters applications, the required documents are:
+                <ul>
+                    <li>Valid passport</li>
+                    <li>Degree certificate and bachelor's transcript/student copy</li>
+                    <li>Work experience (if applicable)</li>
+                    <li>Recommendation letter</li>
+                    <li>Results from English language proficiency exams</li>
+                   </ul>
+        </div>
+        
+        <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>The application process consists of the following steps: </i></li>
+        <div class="details" id="details4">
+            <ul>
+                <li>Step 1. Document submission and registration</li>
+                <li>Step 2. Payment of an advance service deposit</li>
+                <li>Step 3. University application and payment of application fee</li>
+                <li>Step 4 Conditional interview or exam with the university</li>
+                <li>Step 5 Issuance of invitation and admission documents</li>
+                <li>Step 6 Preparation of visa application documents</li>
+                <li>Step 7 Translation of Diploma certificate to italian</li>
+                <li>Step 8 Application for Pre enrollment</li>
+                <li>Step 9 Application for DOV</li>
+                <li>Step 10. Second service fee deposit</li>
+                <li>Step 11. Application for Visa</li>
+                <li>Step 12 Application for Need based scholarship</li>
+                <li>Step 13 Arrangement of accommodation</li>
+                <li>Step 14 Traveling to Italy</li>
+                </ul>
+            
+        </div>
+        <li onclick="showDetails(5)"> <i class="fa fa-caret-down"></i> English proficiency requirements</i></li>
+        <div class="details" id="details5">
+            <ul>
+                <li>IELTS: Overall score of 6</li>
+                <li>TOEFL: Overall score of 60 to 90</li>
+                <li>PTE: Overall score of 50 to 64</li>
+                <li>Duolingo - Overall score of 90+</li>
+                <li>English proficiency Letter from MOE </li>
+                </ul>
+            
+        </div>
+        <li onclick="showDetails(6)"> <i class="fa fa-caret-down"></i>Our recommended intakes and deadlines are as follows: </i></li>
+        <div class="details" id="details6">
+            September 2024 starting class
+        </div>
+        <li onclick="showDetails(7)"> <i class="fa fa-caret-down"></i> Financial Requirements</i></li>
+        <div class="details" id="details7">
+            To meet the financial requirements, applicants must provide financial proofs from residents outside ethiopia. such as an affidavit letter, bank statements along with the ID of the sponsor. The sponsor is required to provide a bank statement with a minimum closing balance of 10,000 USD.         </div>
+        <li onclick="showDetails(8)"> <i class="fa fa-caret-down"></i> The minimum cost breakdown is as follows</i></li>
+        <div class="details" id="details8">
+            <ul>
+                <li>Line Addis Advance service and application deposit(VAT inclusive): 32,200 ETB</li>
+                <li>Line Addis Final service deposit( VAT inclusive): 117,800 ETB</li>
+                <li>Tuition fee - 500 -1000 Euro</li>
+                <li>Document Legalization - average 4000 Birr</li>
+                <li>medical Insurance - average 130 Euro</li>
+                <li>Visa application : Approximately Euro 80</li>
+                <li>Cost of flight ticket to italy : Average 32,000 ETB</li>
+                </ul>
+        </div>
+        <li onclick="showDetails(9)"> <i class="fa fa-caret-down"></i>Other Costs</i></li>
+        <div class="details" id="details9">
+            <ul>
+                <li>Accomodation cost in italy is average of 300 Euro/month</li>
+                <li>Living expense in italy is average 600 Euro/month</li>
+                </ul>
+            </div>
+        <li onclick="showDetails(10)"> <i class="fa fa-caret-down"></i>Scholarships        </i></li>
+        <div class="details" id="details10">
+            Need based scholarship: The regional government scholarship in Italy is applicable by any student whose sponsor has insufficient income. The university, on behalf of the regional government, offers a scholarship for qualified students in the amount of 7000 EURO/year and above, we help our clients apply for this scholarship and enjoy this opportunity.
+            <br><br>
+            Merit based scholarships : most universities offer scholarships to meritorious students on top of the need based scholarship. We help our clients with outstanding grades enjoy this opportunity as well.
+            
+                    </div>
+      </ul>
+      
+    <script>
+        function showDetails(id) {
+  var details = document.getElementById('details' + id);
+  if (details.style.display === "none") {
+    details.style.display = "block";
+  } else {
+    details.style.display = "none";
+  }
+}
+        function toggleDrawer() {
+            var drawer = document.getElementById("myDrawer");
+            drawer.classList.toggle("open");
+            
+        }
+
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById("dropdown" + id);
+            dropdown.classList.toggle("active");
+        }
+    </script>
+<style>
+    
+</style>
+</body>
+
+</html>

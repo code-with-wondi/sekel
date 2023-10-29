@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="single.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<title>Line Addis</title>
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="head-wrapper">
+        <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
+        <img src="logo.png" alt="logo" class="logo">
+    </div>
+
+
+    <div class="drawer" id="myDrawer">
+      
+        <ul class="menu">
+            <li onclick="toggleDropdown(1)">Tourist Visas
+                <ul class="dropdown-list" id="dropdown1">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit Austraila</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit UAE</li>
+                    <li>Visit Bali</li>
+                    <li>Visit Russia</li>
+                    <li>Visit Turkey</li>
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(2)">Study Visas
+                <ul class="dropdown-list" id="dropdown2">
+                    <li>study in Austria</li>
+                    <li>study in Italy</li>
+                    <li>study in Australia</li>
+                    <li>study in China</li>
+                    <li>study in India</li>
+                    <li>study in USA</li>
+                    <li>study in Poland</li>
+                    <li>study in Canada</li>
+                    <li>study in UK</li>
+                    <li>study in Russia</li>
+                    <li>study in Turkey</li>
+                    <li>study in South Korea</li>
+
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(3)">Business visas
+                <ul class="dropdown-list" id="dropdown3">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit Turkey</li>
+               
+                </ul>
+            </li>
+            <li>FAQs</li>
+        </ul>
+    </div>
+    <div class="detail-main">
+        <img src="banner.png" alt="">
+        <h3>Visit China</h3>
+        <p>Here at our agency Line Addis, we provide comprehensive support in obtaining both tourist and business visas to Schengen States. with our team of highly experienced Travel consultants, you can leave all the details in our capable hands.
+        </p>
+        </div>
+    </div>
+    <ul class="drop">
+        <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Our services </li>
+        <div class="details" id="details1">
+            At Line Addis agency, we offer a range of services to assist you in your journey to china. These services include issuing invitation letters, managing the visa application process, Round flight ticketing, arranging accommodations, coordinating ground transportation in china, creating personalized tour itineraries, providing expert tour guides, and ensuring attentive customer support throughout your stay.
+        </div>
+        <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>How to apply </i></li>
+        <div class="details" id="details2">
+            To apply for tourist or business visas, all you need to do is provide a copy of your passport and a photo for registration and then we will take care of the remaining paperwork and schedule your visa application date to ensure a smooth and efficient process.  
+        </div>
+        <li onclick="showDetails(3)"> <i class="fa fa-caret-down"></i>What our package include?</i></li>
+        <div class="details" id="details3">
+            Our standard China Tour package is designed to give you the best experience possible
+            Shanghai, Guangzhou or Beijing.Travel to other cities is possible with additional costs.
+            The package includes all necessary services such as visa processing, round-trip flight
+            tickets, travel insurance, a 6-night stay at a comfortable 4-star hotel with complimentary
+            breakfast,  skilled tour guides and Translator, and reliable ground transportation services. 
+            
+        </div>
+        <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>Costs</i></li>
+        <div class="details" id="details4">
+            The total cost for this package starts at 190,000 ETB, with a prepayment of 23,000 ETB
+            upon registration.
+            
+        </div>
+        <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>Processing time</i></li>
+        <div class="details" id="details4">
+            The processing time for the visa after the application is submitted is approximately 2-3 days.
+
+            
+        </div>
+      </ul>
+      
+    <script>
+        function showDetails(id) {
+  var details = document.getElementById('details' + id);
+  if (details.style.display === "none") {
+    details.style.display = "block";
+  } else {
+    details.style.display = "none";
+  }
+}
+        function toggleDrawer() {
+            var drawer = document.getElementById("myDrawer");
+            drawer.classList.toggle("open");
+            
+        }
+
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById("dropdown" + id);
+            dropdown.classList.toggle("active");
+        }
+    </script>
+<style>
+    
+</style>
+</body>
+
+</html>

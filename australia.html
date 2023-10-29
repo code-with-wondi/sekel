@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="single.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<title>Line Addis</title>
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="head-wrapper">
+        <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
+        <img src="logo.png" alt="logo" class="logo">
+    </div>
+
+
+    <div class="drawer" id="myDrawer">
+      
+        <ul class="menu">
+            <li onclick="toggleDropdown(1)">Tourist Visas
+                <ul class="dropdown-list" id="dropdown1">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit Austraila</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit UAE</li>
+                    <li>Visit Bali</li>
+                    <li>Visit Russia</li>
+                    <li>Visit Turkey</li>
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(2)">Study Visas
+                <ul class="dropdown-list" id="dropdown2">
+                    <li>study in Austria</li>
+                    <li>study in Italy</li>
+                    <li>study in Australia</li>
+                    <li>study in China</li>
+                    <li>study in India</li>
+                    <li>study in USA</li>
+                    <li>study in Poland</li>
+                    <li>study in Canada</li>
+                    <li>study in UK</li>
+                    <li>study in Russia</li>
+                    <li>study in Turkey</li>
+                    <li>study in South Korea</li>
+
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(3)">Business visas
+                <ul class="dropdown-list" id="dropdown3">
+                    <li>Visit Europe</li>
+                    <li>Visit USA</li>
+                    <li>Visit Canada</li>
+                    <li>Visit China</li>
+                    <li>Visit India</li>
+                    <li>Visit Turkey</li>
+               
+                </ul>
+            </li>
+            <li>FAQs</li>
+        </ul>
+    </div>
+    <div class="detail-main">
+        <img src="banner.png" alt="">
+        <h3>Study in Australia
+        </h3>
+        <p>Here at our agency Line Addis, we provide comprehensive support in obtaining both tourist and business visas to Schengen States. with our team of highly experienced Travel consultants, you can leave all the details in our capable hands.</p>
+        </div>
+    </div>
+    <ul class="drop">
+        <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Our range of services include:
+        </li>
+        <div class="details" id="details1">
+            <ul>
+                <li>Consultation with experts</li>
+                <li>Fast-track admission to universities</li>
+                <li>Assistance with scholarship applications</li>
+                <li>Preparation, booking, and payment for English proficiency exams</li>
+                <li>Help with embassy visits, appointment bookings, and visa document preparation</li>
+                <li>Efficient training for visa interviews, motivation letter, and essay preparation</li>
+                <li>Support for appealing Negative visa decisions</li>
+                <li>Assistance with booking accommodations</li>
+                <li>Pre- departure training</li>
+                </ul>
+                </div>
+        <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>   Application documents</i></li>
+        <div class="details" id="details2">
+            For undergraduate applications, the required documents are:
+            <ul>
+                <li>Valid passport</li>
+                <li>High school transcript for grades 9-12</li>
+                <li>Grade 10 and 12 national exam results</li>
+                <li>Recommendation letter</li>
+                <li>Results from English language proficiency exams</li>
+                <li>Genuine Temporary Entrant (GTE) assessment</li>
+                <li>Proof of sufficient funds</li>
+                <li>Certified English translations of additional documents( if any)</li>
+                </ul>
+                For masters applications, the required documents are:
+                <ul>
+                    <li>Valid passport</li>
+                    <li>Degree certificate and bachelor's transcript/student copy</li>
+                    <li>Work experience (if applicable)</li>
+                    <li>Recommendation letter</li>
+                    <li>Results from English language proficiency exams</li>
+                    <li>Genuine Temporary Entrant (GTE) assessment</li>
+                    <li>Proof of sufficient funds</li>
+                    <li>Certified English translations of additional documents( if any)</li>
+                    </ul>
+        </div>
+        
+        <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>The application process consists of the following steps: </i></li>
+        <div class="details" id="details4">
+            <ul>
+                <li>Step 1. Document submission and registration</li>
+                <li>Step 2. Payment of an advance service deposit</li>
+                <li>Step 3. University application and payment of application fee</li>
+                <li>Step 4 Conditional interview or exam with the university</li>
+                <li>Step 5 Issuance of invitation and admission documents</li>
+                <li>Step 6 Preparation of visa application documents</li>
+                <li>Step 7 Payment of a second service deposit</li>
+                <li>Step 8 Visa application</li>
+                <li>Step 9 Submission of original documents</li>
+                <li>Step 10. Biometrics scan and medical diagnosis</li>
+                <li>Step 11. Visa issuance</li>
+                <li>Step 12 Traveling to Australia</li>
+                </ul>
+            
+        </div>
+        <li onclick="showDetails(5)"> <i class="fa fa-caret-down"></i> English proficiency requirements</i></li>
+        <div class="details" id="details5">
+            <ul>
+                <li>IELTS: Overall score of 6 to 6.5, with no band less than 5.5 to 6</li>
+                <li>TOEFL: Overall score of 60 to 90</li>
+                <li>PTE: Overall score of 50 to 64</li>
+                </ul>
+            
+        </div>
+        <li onclick="showDetails(6)"> <i class="fa fa-caret-down"></i>Our recommended intakes and deadlines are as follows: </i></li>
+        <div class="details" id="details6">
+            <ul>
+                <li>February intake (main): apply between October to November</li>
+                <li>July intake: apply between April to May</li>
+                </ul>
+        </div>
+        <li onclick="showDetails(7)"> <i class="fa fa-caret-down"></i> Financial Requirements</i></li>
+        <div class="details" id="details7">
+            To meet the financial requirements, applicants must provide financial proofs such as bank statements along with income verification documents . If they have support from a friend or family, an affidavit of family/relative support is required, along with a bank statement of Minimum 1.5 Million EBT balance.
+        </div>
+        <li onclick="showDetails(8)"> <i class="fa fa-caret-down"></i> The minimum cost breakdown is as follows</i></li>
+        <div class="details" id="details8">
+            <ul>
+                <li>Line Addis Advance service and application deposit(VAT inclusive): 32,200 ETB</li>
+                <li>Line Addis Final service deposit( VAT inclusive): 151,500 ETB</li>
+                <li>Visa application and biometrics: Approximately AUD$ 620</li>
+                <li>Cost of flight ticket to Sydney: Average 132,685 ETB</li>
+                </ul>
+        </div>
+        <li onclick="showDetails(9)"> <i class="fa fa-caret-down"></i>Total Fees</i></li>
+        <div class="details" id="details9">
+            Including our service fee, flight ticket, visa application, and biometrics fee, the total minimum cost is approximately 315,200 ETB. 
+        </div>
+        <li onclick="showDetails(10)"> <i class="fa fa-caret-down"></i>Total Fees</i></li>
+        <div class="details" id="details10">
+            Accommodations range from AUD$ 360 to 600 per month, with an Average living expense of AUD$ 1,520 per month.
+<br><br> 
+            For more information, please visit our office.
+                    </div>
+      </ul>
+      
+    <script>
+        function showDetails(id) {
+  var details = document.getElementById('details' + id);
+  if (details.style.display === "none") {
+    details.style.display = "block";
+  } else {
+    details.style.display = "none";
+  }
+}
+        function toggleDrawer() {
+            var drawer = document.getElementById("myDrawer");
+            drawer.classList.toggle("open");
+            
+        }
+
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById("dropdown" + id);
+            dropdown.classList.toggle("active");
+        }
+    </script>
+<style>
+    
+</style>
+</body>
+
+</html>
