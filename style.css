@@ -143,12 +143,18 @@ text-align: center;
     z-index: 2;
     padding: 5px;
 }
-
-.logo {
+.logo_wrap{
+    margin-left: auto;
     width: 80px;
     height: auto;
     padding: 5px;
+}
+.logo {
+    width: 80px;
+    height: auto;
     margin-left: auto;
+    padding: 5px;
+  
 }
 
 .head-wrapper {
@@ -178,7 +184,7 @@ text-align: center;
     margin-left: 5px;
     background-color: #373737;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
 }
 .details>h3{
     font-size: 13px;
@@ -224,6 +230,9 @@ text-align: center;
     
 }
 .drop>li{
+    align-items: center;
+    gap: 20px;
     color: #DC993B;
     padding: 10px 20px;
+    display: flex;
 }
