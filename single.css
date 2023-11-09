@@ -1,7 +1,16 @@
+
 .details>ul{
     
     margin: 0 10px;
 }
 .drop{
     background-color: #373737;
+}
+body{
+    overflow-x: hidden;
+    height: 100vh;
+
+    background-color: #373737;
+
+
 }
