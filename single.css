@@ -5,6 +5,7 @@
 }
 .drop{
     background-color: #373737;
+    width: 100vh;
 }
 body{
     overflow-x: hidden;
