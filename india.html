@@ -26,30 +26,29 @@
             <li onclick="toggleDropdown(1)">Tourist Visas
                 <ul class="dropdown-list" id="dropdown1">
                     <li>Visit Europe</li>
-                    <li>Visit USA</li>
-                    <li>Visit Canada</li>
-                    <li>Visit Austraila</li>
-                    <li>Visit China</li>
-                    <li>Visit India</li>
-                    <li>Visit UAE</li>
-                    <li>Visit Bali</li>
-                    <li>Visit Russia</li>
-                    <li>Visit Turkey</li>
+                    <li><a href="usa.html">Visit USA</a></li>
+                    <li><a href="canada.html"> Canada</a></li>
+                    <li><a href="australia.html">Visit Austraila</a></li>
+                    <li><a href="china.html">Visit China</a></li>
+                    <li><a href="india.html">Visit India</a></li>
+                    <li><a href="uae.html">Visit UAE</a></li>
+                    <li><a href="schengen.html">Visit Schengen</a></li>
+                  
                 </ul>
             </li>
             <li onclick="toggleDropdown(2)">Study Visas
                 <ul class="dropdown-list" id="dropdown2">
-                    <li>study in Austria</li>
-                    <li>study in Italy</li>
+                    <li><a href="#">study in Austria</a></li>
+                    <li><a href="italy.html">study in Italy</a></li>
                     <li>study in Australia</li>
-                    <li>study in China</li>
-                    <li>study in India</li>
+                    <li><a href="stchina.html">study in China</a></li>
+                    <li><a href="#"></a>study in India</a></li>
                     <li>study in USA</li>
-                    <li>study in Poland</li>
-                    <li>study in Canada</li>
-                    <li>study in UK</li>
+                    <li><a href="stgermany.html">study in Germany</a></li>
+                    <li><a href="#">study in Canada</a></li>
+                    <li><a href="stsweden.html">study in sweden</a></li>
                     <li>study in Russia</li>
-                    <li>study in Turkey</li>
+                    <li><a href="stturkey.html">study in Turkey</a></li>
                     <li>study in South Korea</li>
 
                 </ul>
@@ -131,11 +130,19 @@
     details.style.display = "none";
   }
 }
-        function toggleDrawer() {
-            var drawer = document.getElementById("myDrawer");
-            drawer.classList.toggle("open");
-            
-        }
+function toggleDrawer() {
+  var drawer = document.getElementById("myDrawer");
+  var dropdowns = document.getElementsByClassName("dropdown-list");
+  
+  // Close all dropdown menus
+  for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].classList.remove("active");
+  }
+  
+  // Toggle the drawer
+  drawer.classList.toggle("open");
+}
+
 
         function toggleDropdown(id) {
             var dropdown = document.getElementById("dropdown" + id);

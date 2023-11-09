@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    
     <div class="head-wrapper">
         <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
         <a href="index.html" class="logo_wrap"><img src="logo.png" alt="logo" class="logo"></a> 
@@ -23,28 +24,49 @@
             <li onclick="toggleDropdown(1)">Tourist Visas
                 <ul class="dropdown-list" id="dropdown1">
                     <li>Visit Europe</li>
+                    <li><a href="usa.html">Visit USA</a></li>
+                    <li><a href="canada.html"> Canada</a></li>
+                    <li><a href="australia.html">Visit Austraila</a></li>
+                    <li><a href="china.html">Visit China</a></li>
+                    <li><a href="india.html">Visit India</a></li>
+                    <li><a href="uae.html">Visit UAE</a></li>
+                    <li><a href="schengen.html">Visit Schengen</a></li>
+                  
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(2)">Study Visas
+                <ul class="dropdown-list" id="dropdown2">
+                    <li><a href="#">study in Austria</a></li>
+                    <li><a href="italy.html">study in Italy</a></li>
+                    <li>study in Australia</li>
+                    <li><a href="stchina.html">study in China</a></li>
+                    <li><a href="#"></a>study in India</a></li>
+                    <li>study in USA</li>
+                    <li><a href="stgermany.html">study in Germany</a></li>
+                    <li><a href="#">study in Canada</a></li>
+                    <li><a href="stsweden.html">study in sweden</a></li>
+                    <li>study in Russia</li>
+                    <li><a href="stturkey.html">study in Turkey</a></li>
+                    <li>study in South Korea</li>
+
+                </ul>
+            </li>
+            <li onclick="toggleDropdown(3)">Business visas
+                <ul class="dropdown-list" id="dropdown3">
+                    <li>Visit Europe</li>
                     <li>Visit USA</li>
                     <li>Visit Canada</li>
-                    <li>Visit Austraila</li>
                     <li>Visit China</li>
                     <li>Visit India</li>
-                    <li>Visit UAE</li>
-                    <li>Visit Bali</li>
-                    <li>Visit Russia</li>
                     <li>Visit Turkey</li>
+               
                 </ul>
             </li>
-            <li onclick="toggleDropdown(2)">Menu Item 2
-                <ul class="dropdown-list" id="dropdown2">
-                    <li>Submenu Item 1</li>
-                    <li>Submenu Item 2</li>
-                    <li>Submenu Item 3</li>
-                </ul>
-            </li>
-            <li>Menu Item 3</li>
-            <li>Menu Item 4</li>
+            <li>FAQs</li>
         </ul>
     </div>
+    <div class="all">
+        
 
     <div class="main-content">
         <h3>Recommended programmers</h3>
@@ -445,13 +467,21 @@
 </div>
         </div>
     </div>
-
+</div>
     <script>
-        function toggleDrawer() {
-            var drawer = document.getElementById("myDrawer");
-            drawer.classList.toggle("open");
-            
-        }
+       function toggleDrawer() {
+  var drawer = document.getElementById("myDrawer");
+  var dropdowns = document.getElementsByClassName("dropdown-list");
+  
+  // Close all dropdown menus
+  for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].classList.remove("active");
+  }
+  
+  // Toggle the drawer
+  drawer.classList.toggle("open");
+}
+
 
         function toggleDropdown(id) {
             var dropdown = document.getElementById("dropdown" + id);

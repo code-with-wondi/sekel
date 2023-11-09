@@ -1,6 +1,7 @@
-.draw{
-    color: #DC993B;
+.details>ul{
+    
+    margin: 0 10px;
 }
-.draw>li{
-    color: #DC993B;
+.drop{
+    background-color: #373737;
 }
