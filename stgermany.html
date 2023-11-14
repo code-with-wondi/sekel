@@ -21,38 +21,40 @@
 
     <div class="drawer" id="myDrawer">
       
+     
         <ul class="menu">
             <li onclick="toggleDropdown(1)">Tourist Visas
                 <ul class="dropdown-list" id="dropdown1">
                     <li>Visit Europe</li>
                     <li><a href="usa.html">Visit USA</a></li>
-                    <li><a href="canada.html"> Canada</a></li>
-                    <li><a href="australia.html">Visit Austraila</a></li>
-                    <li><a href="china.html">Visit China</a></li>
-                    <li><a href="india.html">Visit India</a></li>
-                    <li><a href="uae.html">Visit UAE</a></li>
+                    <li><a href="canada.html"> Visit Canada</a></li>
                     <li><a href="schengen.html">Visit Schengen</a></li>
+                  
+                    <li><a href="china.html">Visit China</a></li>
+                   
+                    <li><a href="uae.html">Visit UAE</a></li>
+                    
                   
                 </ul>
             </li>
             <li onclick="toggleDropdown(2)">Study Visas
                 <ul class="dropdown-list" id="dropdown2">
-                    <li><a href="#">study in Austria</a></li>
+                    <li><a href="australia.html">study in Australiia</a></li>
                     <li><a href="italy.html">study in Italy</a></li>
-                    <li>study in Australia</li>
+                    <li><a href="usa.html">Study in USA</a> </li>
                     <li><a href="stchina.html">study in China</a></li>
-                    <li><a href="#"></a>study in India</a></li>
-                    <li>study in USA</li>
-                    <li><a href="stgermany.html">study in Germany</a></li>
-                    <li><a href="#">study in Canada</a></li>
+                    <li><a href="stcanada.html"></a>Study in Canada</a></li>
                     <li><a href="stsweden.html">study in sweden</a></li>
-                    <li>study in Russia</li>
+                    <li><a href="stgermany.html">study in Germany</a></li>
+                    <li><a href="india.html">Study in INDIA</a></li>
                     <li><a href="stturkey.html">study in Turkey</a></li>
-                    <li>study in South Korea</li>
+                    <li><a href="stsouth.html">study in South Korea</a></li>
+                  
+                    <li><a href="stpoland.html">Study in Poland</a></li>
 
                 </ul>
             </li>
-            <li onclick="toggleDropdown(3)">Business visas
+            <!-- <li onclick="toggleDropdown(3)">Business visas
                 <ul class="dropdown-list" id="dropdown3">
                     <li>Visit Europe</li>
                     <li>Visit USA</li>
@@ -62,7 +64,7 @@
                     <li>Visit Turkey</li>
                
                 </ul>
-            </li>
+            </li> -->
             <li>FAQs</li>
         </ul>
     </div>
@@ -75,7 +77,7 @@
     </div>
     <ul class="drop">
         <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Our range of services include:</li>
-        <div class="details" id="details1">
+        <div class="details" id="details1" style="display: none;">
             <ul>
                 <li>Consultation with experts</li>
                 <li>Fast-track admission to universities</li>
@@ -90,7 +92,7 @@
         </div>
     
         <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>Application documents</i></li>
-        <div class="details" id="details2">
+        <div class="details" id="details2" style="display: none;">
             For undergraduate applications, the required documents are:
             <ul>
                 <li>Valid passport</li>
@@ -114,7 +116,7 @@
         </div>
     
         <li onclick="showDetails(4)"><i class="fa fa-caret-down"></i>Application process steps</i></li>
-        <div class="details" id="details4">
+        <div class="details" id="details4" style="display: none;">
             <ul>
                 <li>Research and choose a course and university in India.</li>
                 <li>Check eligibility requirements and gather necessary documents.</li>
@@ -129,14 +131,14 @@
         </div>
     
         <li onclick="showDetails(5)"><i class="fa fa-caret-down"></i>Financial Document Requirements</i></li>
-        <div class="details" id="details5">
+        <div class="details" id="details5" style="display: none;">
             <ul>
                 <li>The sponsor is required to provide a bank statement with a minimum closing balance of Bank statement of 2000 USD</li>
             </ul>
         </div>
     
         <li onclick="showDetails(7)"><i class="fa fa-caret-down"></i>English Requirements</i></li>
-        <div class="details" id="details7">
+        <div class="details" id="details7" style="display: none;">
             <ul>
                 <li>IELTS: Overall score of 6</li>
                 <li>TOEFL: Overall score of 60 to 90</li>
@@ -147,7 +149,7 @@
         </div>
     
         <li onclick="showDetails(8)"><i class="fa fa-caret-down"></i>Scholarships</i></li>
-        <div class="details" id="details8">
+        <div class="details" id="details8" style="display: none;">
             <ul>
                 <li>ICCR</li>
                 <li>Study in India</li>
@@ -155,14 +157,14 @@
         </div>
     
         <li onclick="showDetails(9)"><i class="fa fa-caret-down"></i>Intakes</i></li>
-        <div class="details" id="details9">
+        <div class="details" id="details9" style="display: none;">
             <ul>
                 <li>January intake, Class starting from July</li>
             </ul>
         </div>
     
         <li onclick="showDetails(10)"><i class="fa fa-caret-down"></i>Costs</i></li>
-        <div class="details" id="details10">
+        <div class="details" id="details10" style="display: none;">
             <ul>
                 <li>Admission fee – 80-120 USD</li>
                 <li>Tuition fee/year – 5000 – 8000 USD</li>

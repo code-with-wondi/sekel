@@ -11,8 +11,8 @@ body {
 }
 
 .menu {
-    background-color: #000000;
-    opacity: 0.8;
+    background-color: rgba(0, 0,0,0.8);
+
     color: #DC993B;
 }.menu>li{
     font-size: 16px;
@@ -76,7 +76,7 @@ margin-top: 64px;
 .drawer .dropdown-list {
     display: none;
 
-    background-color: #000;
+    background-color: rgba(0, 0,0,0.8);
     color: #fff;
 }
 
@@ -211,6 +211,7 @@ text-align: center;
 .details>p{
     font-size: 10px;
     font-weight: 300;
+    margin-bottom: 10px;
 }
 .details>button{
     background-color: #DC993B;
