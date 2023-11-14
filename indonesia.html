@@ -76,10 +76,10 @@
     </div>
     <ul class="drop">
         <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>About the program</li>
-        <div class="details" id="details1">
+        <div class="details" id="details1" style="display: none;">
             From surfing and snorkeling to exploring ancient temples and traditional markets, Bali offers a diverse range of experiences. Bali is an ideal place to visit with your family , friends , for a honeymoon or even if you want to go solo you will be guaranteed to have an experience that you will cherish.        </div>
         <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>   Application documents and requirements</i></li>
-        <div class="details" id="details2">
+        <div class="details" id="details2" style="display: none;">
             <ul>
                 <li>Confirmed round ticket</li>
                 <li>Confirmed Booked hotel</li>
@@ -91,12 +91,12 @@
         </div>
         
         <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>Process Duration</i></li>
-        <div class="details" id="details4">
+        <div class="details" id="details4" style="display: none;">
             15 days to 1 month
             
         </div>
         <li onclick="showDetails(5)"> <i class="fa fa-caret-down"></i> Application steps</i></li>
-        <div class="details" id="details5">
+        <div class="details" id="details5" style="display: none;">
             <ul>
                 <li>Complete paperwork provided by Line Addis</li>
                 <li>Provide Passport and other relevant documents</li>
@@ -105,7 +105,7 @@
             
         </div>
         <li onclick="showDetails(6)"> <i class="fa fa-caret-down"></i>  Our services list</i></li>
-        <div class="details" id="details6">
+        <div class="details" id="details6" style="display: none;">
             <ul>
                 <li>Accommodation</li>
                 <li>Flight booking</li>
@@ -114,7 +114,7 @@
                 </ul>
         </div>
         <li onclick="showDetails(7)"> <i class="fa fa-caret-down"></i> Costs with in the process</i></li>
-        <div class="details" id="details7">
+        <div class="details" id="details7" style="display: none;">
             <ul>
                 <li>Visa cost – 55 - 98 USD</li>
                 <li>Flight Ticket – 25,000 – 35,000 ETB</li>
@@ -127,13 +127,14 @@
       
     <script>
         function showDetails(id) {
-  var details = document.getElementById('details' + id);
-  if (details.style.display === "none") {
-    details.style.display = "block";
-  } else {
-    details.style.display = "none";
-  }
-}
+        var details = document.getElementById('details' + id);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+
 function toggleDrawer() {
   var drawer = document.getElementById("myDrawer");
   var dropdowns = document.getElementsByClassName("dropdown-list");

@@ -76,15 +76,15 @@
     </div>
     <ul class="drop">
         <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Our services </li>
-        <div class="details" id="details1">
+        <div class="details" id="details1" style="display: none;">
             At Line Addis agency, we offer a range of services to assist you in your journey to china. These services include issuing invitation letters, managing the visa application process, Round flight ticketing, arranging accommodations, coordinating ground transportation in china, creating personalized tour itineraries, providing expert tour guides, and ensuring attentive customer support throughout your stay.
         </div>
         <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>How to apply </i></li>
-        <div class="details" id="details2">
+        <div class="details" id="details2" style="display: none;">
             To apply for tourist or business visas, all you need to do is provide a copy of your passport and a photo for registration and then we will take care of the remaining paperwork and schedule your visa application date to ensure a smooth and efficient process.  
         </div>
         <li onclick="showDetails(3)"> <i class="fa fa-caret-down"></i>What our package include?</i></li>
-        <div class="details" id="details3">
+        <div class="details" id="details3" style="display: none;">
             Our standard China Tour package is designed to give you the best experience possible
             Shanghai, Guangzhou or Beijing.Travel to other cities is possible with additional costs.
             The package includes all necessary services such as visa processing, round-trip flight
@@ -93,13 +93,13 @@
             
         </div>
         <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>Costs</i></li>
-        <div class="details" id="details4">
+        <div class="details" id="details4" style="display: none;">
             The total cost for this package starts at 190,000 ETB, with a prepayment of 23,000 ETB
             upon registration.
             
         </div>
         <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>Processing time</i></li>
-        <div class="details" id="details4">
+        <div class="details" id="details4" style="display: none;">
             The processing time for the visa after the application is submitted is approximately 2-3 days.
 
             
@@ -107,14 +107,14 @@
       </ul>
       
     <script>
-        function showDetails(id) {
-  var details = document.getElementById('details' + id);
-  if (details.style.display === "none") {
-    details.style.display = "block";
-  } else {
-    details.style.display = "none";
-  }
-}
+function showDetails(id) {
+        var details = document.getElementById('details' + id);
+        if (details.style.display === "block" || details.style.display === "") {
+            details.style.display = "none";
+        } else {
+            details.style.display = "block";
+        }
+    }
 function toggleDrawer() {
   var drawer = document.getElementById("myDrawer");
   var dropdowns = document.getElementsByClassName("dropdown-list");

@@ -89,14 +89,18 @@ So what are you waiting for? Contact us today and let us take care of all the de
       </ul>
       
     <script>
-        function showDetails(id) {
+       function showDetails(id) {
   var details = document.getElementById('details' + id);
+  details.style.display = "none"; // Set initial display property to "none"
+  
+  // Rest of the code remains the same
   if (details.style.display === "none") {
     details.style.display = "block";
   } else {
     details.style.display = "none";
   }
 }
+
         function toggleDrawer() {
             var drawer = document.getElementById("myDrawer");
             drawer.classList.toggle("open");

@@ -75,7 +75,7 @@
     </div>
     <ul class="drop">
         <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Our services </li>
-        <div class="details" id="details1">
+        <div class="details" id="details1" style="display: none;">
             issuing invitation letters, 
 managing the visa process, 
 arranging accommodations, 
@@ -86,18 +86,18 @@ providing attentive customer support throughout your stay.
 
         </div>
         <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>How to apply </i></li>
-        <div class="details" id="details2">
+        <div class="details" id="details2" style="display: none;">
             To apply for a Tourist or business visas, all you need to do is bring your passport and the required supporting documents that demonstrate your socioeconomic ties in Ethiopia. These documents may include bank statements, property ownership certificates, marriage certificates, business ownership or employment certificates, and more. We only require scanned copies or copies of your documents for the application.
  <br>
             Once our consultants have reviewed your documents and confirmed your eligibility for a visa application, we will take care of the remaining paperwork, plan your tour itinerary, and issue an invitation letter from a welcoming company. We will also schedule your visa application date to ensure a smooth process.
                     </div>
         <li onclick="showDetails(3)"> <i class="fa fa-caret-down"></i>Cost</i></li>
-        <div class="details" id="details3">
+        <div class="details" id="details3" style="display: none;">
             Our typical service charges are inclusive of VAT and cover the costs of the visa process, travel insurance, a 6-day stay at a 4-star hotel with complementary breakfast, tour guide arrangement, and ground transportation services. The total cost is 253,000 ETB, with a prepayment of 23,000 ETB payable upon registration.
 
         </div>
         <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>Process Duration</i></li>
-        <div class="details" id="details4">
+        <div class="details" id="details4" style="display: none;">
             Please note that the visa processing time can vary depending on the destination you wish to travel, usually it takes 2 weeks to get visa results once visa application is submitted to the embassy. Once your visa is granted, you can start planning your trip and explore all the wonders that await you.
  <br>
             So what are you waiting for? Contact us today and let us take care of all the details so you can fulfill your dream of visiting the Schengen States. We look forward to providing you with an unforgettable travel experience.
@@ -109,13 +109,14 @@ providing attentive customer support throughout your stay.
       
     <script>
         function showDetails(id) {
-  var details = document.getElementById('details' + id);
-  if (details.style.display === "none") {
-    details.style.display = "block";
-  } else {
-    details.style.display = "none";
-  }
-}
+        var details = document.getElementById('details' + id);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+
 function toggleDrawer() {
   var drawer = document.getElementById("myDrawer");
   var dropdowns = document.getElementsByClassName("dropdown-list");

@@ -76,10 +76,10 @@
     </div>
     <ul class="drop">
         <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i> About the program </li>
-        <div class="details" id="details1">
+        <div class="details" id="details1" style="display: none;">
             India is a populous country in South Asia known for its cultural diversity, iconic landmarks like the Taj Mahal, diverse cuisine, and a thriving film industry called Bollywood.         </div>
         <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>Application documents and requirements </i></li>
-        <div class="details" id="details2">
+        <div class="details" id="details2" style="display: none;">
             <ul>
                 <li>Confirmed return ticket</li>
                 <li>Two photographs</li>
@@ -89,11 +89,11 @@
                 </ul>
             </div>
         <li onclick="showDetails(3)"> <i class="fa fa-caret-down"></i>  Process Duration</i></li>
-        <div class="details" id="details3">
+        <div class="details" id="details3" style="display: none;">
             15 days to 1 month
         </div>
         <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>   Application steps</i></li>
-        <div class="details" id="details4">
+        <div class="details" id="details4" style="display: none;">
             <ul>
                 <li>Fill out the paperwork provided by Line Addis</li>
                 <li>Provide a valid passport and other documents needed for the application</li>
@@ -101,7 +101,7 @@
                 </ul>
         </div>
         <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>·      Our services list</i></li>
-        <div class="details" id="details4">
+        <div class="details" id="details4" style="display: none;">
             <ul>
                 <li>Accommodation</li>
                 <li>Complete visa process</li>
@@ -111,7 +111,7 @@
             
         </div>
         <li onclick="showDetails(5)"> <i class="fa fa-caret-down"></i>·     Costs with in the process</i></li>
-        <div class="details" id="details5">
+        <div class="details" id="details5" style="display: none;">
             <ul>
                 <li>Visa Cost- 5,280 ETB</li>
                 <li>Itinerary – 500 USD</li>
@@ -123,13 +123,14 @@
       
     <script>
         function showDetails(id) {
-  var details = document.getElementById('details' + id);
-  if (details.style.display === "none") {
-    details.style.display = "block";
-  } else {
-    details.style.display = "none";
-  }
-}
+        var details = document.getElementById('details' + id);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+
 function toggleDrawer() {
   var drawer = document.getElementById("myDrawer");
   var dropdowns = document.getElementsByClassName("dropdown-list");

@@ -15,3 +15,10 @@ body{
 
 
 }
+.head-wrapper{
+    border-bottom: 5px solid #DC993B;
+
+}
+.detail-main >img{
+    margin-top: 60px;
+}
