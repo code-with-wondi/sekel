@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="single.css">
+    <link rel="stylesheet" href="single.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -80,31 +81,58 @@
         </ul>
     </div>
     <div class="detail-main">
-        <img src="banner.png" alt="">
-        <h3>Visit Schengen States ( europe)</h3>
-        <p>Explore Europe with Ease through Line Addis</p>
-        <p>Embark on a journey of discovery with Line Addis as your trusted travel partner, navigating through 26 captivating Schengen countries. Embrace the freedom to explore culture, history, and natural beauty, from Eiffel Tower in Paris to the Mediterranean allure of Greece islands, all with a single visa.</p>
-        <p>Seamless Travel Services Tailored for You</p>
-    </div>
+        <img src="Canada.jpg" alt="">
+        <h3>Visit Turkey
+        </h3>
+        <p>Line Addis Travel Agency invites you to a 5 nights tavel package to Turkey, istanbul. Turkey offers an array of experiences that transcend the ordinary, from sprawling metropolises to ancient ruins, and from moonlike landscapes to pristine beaches.</p>
+        </div>
     </div>
     <ul class="drop">
-        <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Our services include </li>
+        <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Duration and what you would do</li>
         <div class="details" id="details1" style="display: none;">
             <ul>
-                <li><b>Visa Processing</b>:- Official Invitations issuance</li>
-                <li><b>Visa Appointments</b>: - <b>Visa Interview Preparation: </b> Personalized coaching for a successful visa interview.</li>
-                <li><b>Air Travel ticketing & Insurance: </b>light ticket options</li>
-                <li><b>Accommodations & Transfers: </b> <b>translator & Guided Tours</b>: Ground Transportation Services</li>
-    
+                
+                <ul>
+                    <li>Day 1: Arrive in Istanbul – Boat Tour - Transfer </li>
+                    <li>Day 2 – Istanbul Old City Tour & Shopping Mall </li>
+                    <li>Buffet breakfast at hotel </li>
+                    <li>View  Hippodrome, Blue Mosque, Hagia Sophia, Aqua Florya  and shopping mall</li>
+                    <li>Day 3 – Freeday or Optional Tours </li>
+                    <li>Day 4 - Freeday or Optional Tours</li>
+                    <li>Day 5: Departure / Return to your Country</li>
+                    </ul>
             </ul>
         </div>
-        <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>Your European Adventure Awaits: </li>
+        <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>  Included services </i></li>
         <div class="details" id="details2" style="display: none;">
-            Initiate your Process with a passport scan and financial documents and we will manage the rest . For tailored travel plans suited to individual or group preferences, we are dedicated to delivering exceptional European experiences.
-
+            <ul>
+                <li>4 Night Hotel Accommodation with Open-buffet Breakfast </li>
+                <li>Meet & Greet at the Airport and All Transfers </li>
+                <li>Lunch Mentioned on the CityTour (1 TIME) </li>
+                <li>Travel Guest Assistance Service (24/7) </li>
+                <li>Visa Processing</li>
+                <li>INternational Flight tickets</li>
+                </ul>
         </div>
-        
-
+        <li onclick="showDetails(3)"><i class="fa fa-caret-down"></i> Optional Extra Tours </i></li>
+        <div class="details" id="details3" style="display: none;">
+            <ul>
+                <li>Sapanca & Maşukiye Tour - 60 $ per person </li>
+                <li>Bursa Tour - 60 $ per person </li>
+                <li>Şile –Ağva Tour - 60 $ per person </li>
+                <li>Prices Island Tour - 50 $ per person </li>
+                <li>Vialand Tour - 75 $ per p</li>
+                </ul>
+        </div>
+        <li onclick="showDetails(4)"><i class="fa fa-caret-down"></i>Needed for application</i></li>
+        <div class="details" id="details4" style="display: none;">
+            <ul>
+                <li>Passport with validity over 1 year</li>
+                <li>Bank statement with balance over 7000 USD and Bank letter, Authenticated from MFA and Bank Headoffice</li>
+                <li>Business license or employement letter</li>
+                <li>Propertly orvehicle ownership certificates( Optionals)</li>
+                </ul>
+        </div>
       </ul>
       
     <script>
@@ -129,7 +157,6 @@ function toggleDrawer() {
   // Toggle the drawer
   drawer.classList.toggle("open");
 }
-
 
         function toggleDropdown(id) {
             var dropdown = document.getElementById("dropdown" + id);

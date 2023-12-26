@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="single.css">
+    <link rel="stylesheet" href="single.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -18,11 +19,8 @@
         <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
         <a href="index.html" class="logo_wrap"><img src="logo.png" alt="logo" class="logo"></a> 
     </div>
-
-
     <div class="drawer" id="myDrawer">
       
-     
         <ul class="menu">
             <li onclick="toggleDropdown(5)">Home
                 <ul class="dropdown-list" id="dropdown5">
@@ -30,7 +28,7 @@
                    
                   
                 </ul>
-            </li>s
+            </li>
             <li onclick="toggleDropdown(1)">Tourist Visas
                 <ul class="dropdown-list" id="dropdown1">
                     <li>Visit Europe</li>
@@ -40,7 +38,11 @@
                   
                     <li><a href="china.html">Visit China</a></li>
                    
+                    <li><a href="Bali.html">Visit Bali</a></li>
+                    <li><a href="turkey.html">Visit Turkey</a></li>
+                    <li><a href="strussia.html">Visit Rusiia</a></li>
                     <li><a href="uae.html">Visit UAE</a></li>
+                    <li><a href="seychelles.html">Visit Seychelles</a></li>
                     <li><a href="visitusuk.html">Visit US,UK or Australia</a></li>
                   
                 </ul>
@@ -57,7 +59,7 @@
                     <li><a href="india.html">Study in INDIA</a></li>
                     <li><a href="stturkey.html">study in Turkey</a></li>
                     <li><a href="stsouth.html">study in South Korea</a></li>
-                  
+                    <li><a href="stindia.html">Study in India</a></li>
                     <li><a href="stpoland.html">Study in Poland</a></li>
 
                 </ul>
@@ -77,57 +79,37 @@
         </ul>
     </div>
     <div class="detail-main">
-        <img src="INDIA.jpg" alt="">
-        <h3>VISIT INDIA</h3>
-        <p>Here at our agency Line Addis, we provide comprehensive support in obtaining both tourist and business visas to Schengen States. with our team of highly experienced Travel consultants, you can leave all the details in our capable hands.
-        </p>
+        <img src="Canada.jpg" alt="">
+        <h3>VISIT INDIA
+        </h3>
+        <p>
+            Line Addis warmly invites you to immerse yourself in the vibrant heart of India. We are dedicated to ensuring your voyage to this ancient land is as majestic as India itself.
+        </p>                     
+        
+        <i>Inorder to process your visa to India, we need your passport copy and 6 months bank statement.</i>
         </div>
     </div>
     <ul class="drop">
-        <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i> About the program </li>
+        <li onclick="showDetails(1)"><i class="fa fa-caret-down"></i>Must visit sites in India</li>
         <div class="details" id="details1" style="display: none;">
-            India is a populous country in South Asia known for its cultural diversity, iconic landmarks like the Taj Mahal, diverse cuisine, and a thriving film industry called Bollywood.         </div>
-        <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i>Application documents and requirements </i></li>
+            <ul>
+                <li><b>Taj Mahal, Agra </b>: Located in Agra, Uttar Pradesh, this white marble mausoleum stands as an eternal symbol of love. the Taj Mahal is a UNESCO World Heritage Site and one of the New Seven Wonders of the World.</li>
+                <li><b>Jaipur, Rajasthan</b>: Known as the 'Pink City' for its distinctive terracotta-colored buildings, Jaipur is part of the famous Golden Triangle tourist circuit.</li>
+                <li><b>Varanasi, Uttar Pradesh</b>: One of the world's oldest inhabited cities, Varanasi, is a city of great religious significance for Hindus. the city is known for its spiritual ambience, historical ghats, temples, and the ritual of Ganga Aarti. </li>
+                </ul>
+        </div>
+        <li onclick="showDetails(2)"><i class="fa fa-caret-down"></i> Our Travel services include: </i></li>
         <div class="details" id="details2" style="display: none;">
             <ul>
-                <li>Confirmed return ticket</li>
-                <li>Two photographs</li>
-                <li>Copy of passport</li>
-                <li>Bank statement in the name of the applicant</li>
-                <li>Hotel booking confirmation</li>
-                </ul>
-            </div>
-        <li onclick="showDetails(3)"> <i class="fa fa-caret-down"></i>  Process Duration</i></li>
-        <div class="details" id="details3" style="display: none;">
-            15 days to 1 month
-        </div>
-        <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>   Application steps</i></li>
-        <div class="details" id="details4" style="display: none;">
-            <ul>
-                <li>Fill out the paperwork provided by Line Addis</li>
-                <li>Provide a valid passport and other documents needed for the application</li>
-                <li>Complete payment and receive your visa</li>
+                <li>Visa Processing </li>
+                <li>Air Travel ticketing & Insurance</li>
+                <li>Accommodation & Transportation</li>
+                <li>Tour guides </li>
+               
                 </ul>
         </div>
-        <li onclick="showDetails(4)"> <i class="fa fa-caret-down"></i>·      Our services list</i></li>
-        <div class="details" id="details4" style="display: none;">
-            <ul>
-                <li>Accommodation</li>
-                <li>Complete visa process</li>
-                <li>Flight booking</li>
-                <li>Tour guide</li>
-                </ul>
-            
-        </div>
-        <li onclick="showDetails(5)"> <i class="fa fa-caret-down"></i>·     Costs with in the process</i></li>
-        <div class="details" id="details5" style="display: none;">
-            <ul>
-                <li>Visa Cost- 5,280 ETB</li>
-                <li>Itinerary – 500 USD</li>
-                <li>Flight – 19,000 – 23,000 ETB</li>
-                </ul>
-            
-        </div>
+        
+        
       </ul>
       
     <script>
@@ -152,7 +134,6 @@ function toggleDrawer() {
   // Toggle the drawer
   drawer.classList.toggle("open");
 }
-
 
         function toggleDropdown(id) {
             var dropdown = document.getElementById("dropdown" + id);
